@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-slace=1.0>
+        <title>Проект по OWEB</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+       <section class="sub-header">
+           <nav>
+               <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                   <ul>
+                       <li><a href="main.html">Home</a></li>
+                       <li><a href="about.html">About me</a></li>
+                       <li><a href="gallery.html">Gallery</a></li>
+                       <li><a href="insta.html">Mini Instagram</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="survey.html">Survey</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                   </ul>
+               </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+           <h1>Contact Me</h1>  
+       </section>
+
+       <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94881.76732758868!2d21.424890250000008!3d41.999090249999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135415a58c9aa2a5%3A0xb2ed88c260872020!2sSkopje!5e0!3m2!1sen!2smk!4v1635027807674!5m2!1sen!2smk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>">
+       </section>
+
+       <section class="contact-me">
+           <div class="row">
+               <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>St. Mite Bogoevski 27a</h5>
+                            <p>Aerodrom, Skopje</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+38975430974</h5>
+                            <p>Monday - Friday</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>darkonushev@yahoo.com</h5>
+                            <p>Feel free to email me anytime</p>
+                        </span>
+                    </div>
+               </div>
+               <div class="contact-col">
+                   <form action="">
+                       <input type="text" placeholder="Enter your name" required>
+                       <input type="email" placeholder="Enter Email Address" required>
+                       <input type="text" placeholder="Enter your subject" required>
+                        <textarea rows="8" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn" onclick="window.location.reload()">Send</button>
+                    </form>
+                </div>
+           </div>
+       </section>
+
+
+        <section class="footer">
+           <h4>About me</h4>
+           <p>Feel free to contact me on any of my social platforms given below</p>
+           <div class="icons">
+               <a href="https://www.facebook.com/darko.nushev"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+               <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+               <a href="https://github.com/DarkoNushev"><i class="fa fa-github"></i></a>
+           </div>
+           <p>Created by Darko Nushev <i class="fa fa-heart-o"></i></p>
+        </section>
+
+        <!-- Malku JS za menito vo mobilna forma -->
+        <script>
+           var navLinks = document.getElementById("navLinks")
+           function showMenu(){
+               navLinks.style.left = "0";
+           }
+           function hideMenu(){
+               navLinks.style.left = "-200px";
+           }
+        </script>
+    </body>
+</html>

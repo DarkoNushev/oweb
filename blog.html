@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-slace=1.0>
+        <title>Проект по OWEB</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+       <section class="sub-header">
+           <nav>
+               <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                   <ul>
+                       <li><a href="main.html">Home</a></li>
+                       <li><a href="about.html">About me</a></li>
+                       <li><a href="gallery.html">Gallery</a></li>
+                       <li><a href="insta.html">Mini Instagram</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="survey.html">Survey</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                   </ul>
+               </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+           <h1>Blog - Feel free to express yourselfs</h1>  
+       </section>
+
+       <section class="blog-content">
+           <div class="row">
+               <div class="blog-left">
+                    <img src="sliki/blog.jpeg">
+                    <h2>Some of my unpopular opinions </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo reiciendis sit atque qui aspernatur, corrupti iste itaque quae deleniti excepturi officia, laudantium magm omnis esse voluptates.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eos ipsa culpa impedit veniam, harum non tenetur adipisci aut assumenda beatae, hic quas? Quisquam, fugit quibusdam similique nisi repudiandae saepe.</p>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magni laudantium ratione, fugiat quam tempora asperiores doloribus tenetur quae autem, iusto voluptatum explicabo incidunt repudiandae tempore voluptas sapiente molestiae rem.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eos ipsa culpa impedit veniam, harum non tenetur adipisci aut assumenda beatae, hic quas? Quisquam, fugit quibusdam similique nisi repudiandae saepe.</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="5" placeholder="Your Thought"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Thought</button>
+                    </form>
+                </div>
+              
+                </div>
+               <div class="blog-right">
+                <h3>Categories/Discussions</h3>
+                <div>
+                    <span>College</span>
+                    <span>23</span>
+                </div>
+                <div>
+                    <span>Music</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Movies</span>
+                    <span>14</span>
+                </div>
+                <div>
+                    <span>Sport</span>
+                    <span>29</span>
+                </div>
+                <div>
+                    <span>Science</span>
+                    <span>7</span>
+                </div>
+                <div>
+                    <span>HTML & CSS</span>
+                    <span>24</span>
+                </div>
+                <div>
+                    <span>JS</span>
+                    <span>9</span>
+                </div>
+                <div>
+                    <span>jQuery</span>
+                    <span>7</span>
+                </div>
+                </div>
+           </div>
+       </section>
+
+    
+        <section class="footer">
+           <h4>About me</h4>
+           <p>Feel free to contact me on any of my social platforms given below</p>
+           <div class="icons">
+               <a href="https://www.facebook.com/darko.nushev"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+               <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+               <a href="https://github.com/DarkoNushev"><i class="fa fa-github"></i></a>
+           </div>
+           <p>Created by Darko Nushev <i class="fa fa-heart-o"></i></p>
+        </section>
+
+        <!-- Malku JS za menito vo mobilna forma -->
+        <script>
+           var navLinks = document.getElementById("navLinks")
+           function showMenu(){
+               navLinks.style.left = "0";
+           }
+           function hideMenu(){
+               navLinks.style.left = "-200px";
+           }
+        </script>
+    </body>
+</html>

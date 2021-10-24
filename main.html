@@ -2,9 +2,159 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width", initial-slace=1.0>
+        <title>Проект по OWEB</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+       <section class="header">
+           <nav>
+               <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                   <ul>
+                       <li><a href="main.html">Home</a></li>
+                       <li><a href="about.html">About me</a></li>
+                       <li><a href="gallery.html">Gallery</a></li>
+                       <li><a href="insta.html">Mini Instagram</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="survey.html">Survey</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                   </ul>
+               </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+           
+           <div class="text-box">
+               <h1>Welcome to my Website</h1>
+               <p>My name is Darko Nushev, and i hope you`ll enjoy it</p>
+               <a href="" class="hero-btn">Download my CV</a>
+           </div>
+       </section>
+
+       <section class="aboutMe">
+            <h1>About me</h1>
+            <p>Hello, my name is Darko and i`m 26 years old. Here you can see some of my passions and some of the things i`d like to do in the near future</p>
+            <div class="row">
+                <div class="aboutMe-col">
+                    <h3>High School</h3>
+                    <p>I finished my high school in 2014 at SUGS Vlado Tasevski as an electrical technician.</p>
+                </div>
+                <div class="aboutMe-col">
+                    <h3>University</h3>
+                    <p>Currently attending FEIT, and im in my last year</p>
+                </div>
+                <div class="aboutMe-col">
+                    <h3>Jobs</h3>
+                    <p>I am working since 2015 at Lining Elektroniks - Electronics department</p>
+                </div>
+            </div>
+       </section>
+
+       <section class="hobby">
+           <h1>My hobbies</h1>
+           <p>I do have alot of hobbies, but one of them has to be watching football. My favorite team is Borrusia Dortmund (Germany)</p>
+           <div class="row">
+                <div class="hobby-col">
+                   <img src="sliki/hobi1.jpeg">
+                   <div class="layer">
+                    <h3>Mascot Emma</h3>
+                   </div>
+                </div>
+                <div class="hobby-col">
+                    <img src="sliki/bvb.jpg">
+                    <div class="layer">
+                    <h3>Yellow Wall</h3>
+                    </div>
+                </div>
+                <div class="hobby-col">
+                    <img src="sliki/hobi2.jpeg">
+                    <div class="layer">
+                    <h3>Crest</h3>
+                    </div>
+                </div>
+           </div>
+       </section>
+
+       <section class="hobby">
+        <h1>Favorite food</h1>
+        <p>I am pretty open about trying new things when it comes to eating, but my favorite has to be</p>
+        <div class="row">
+             <div class="hobby-col">
+                <img src="sliki/food3.jpeg">
+                <div class="layer">
+                 <h3>Baklava</h3>
+                </div>
+             </div>
+             <div class="hobby-col">
+                 <img src="sliki/food3.jpeg">
+                 <div class="layer">
+                 <h3>Baklava</h3>
+                 </div>
+             </div>
+             <div class="hobby-col">
+                 <img src="sliki/food3.jpeg">
+                 <div class="layer">
+                 <h3>& Baklava all the way</h3>
+                 </div>
+             </div>
+        </div>
+        </section>
         
+       <section class="hobby">
+        <h1>Movies & TV series</h1>
+        <p>I love watching movies and TV series. I quite enjoy the Science Fiction once the most. Some of my favorite are</p>
+        <div class="row">
+             <div class="hobby-col">
+                <img src="sliki/book1.jpeg">
+                <div class="layer">
+                 <h3>Everything from MARVEL</h3>
+                </div>
+             </div>
+             <div class="hobby-col">
+                 <img src="sliki/book2.jpeg">
+                 <div class="layer">
+                 <h3>Game of Thrones</h3>
+                 </div>
+             </div>
+             <div class="hobby-col">
+                 <img src="sliki/book3.jpeg">
+                 <div class="layer">
+                 <h3>Breaking Bad</h3>
+                 </div>
+             </div>
+        </div>
+        </section>
+       
+        <section class="cta">
+            <h1>Contact me for more information</h1>
+            <a href="contact.html" class="hero-btn">Contact Me</a>
+        </section>
+
+        <section class="footer">
+           <h4>About me</h4>
+           <p>Feel free to contact me on any of my social platforms given below</p>
+           <div class="icons">
+               <a href="https://www.facebook.com/darko.nushev"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+               <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+               <a href="https://github.com/DarkoNushev"><i class="fa fa-github"></i></a>
+           </div>
+           <p>Created by Darko Nushev <i class="fa fa-heart-o"></i></p>
+        </section>
+
+        <!-- Malku JS za menito vo mobilna forma -->
+        <script>
+           var navLinks = document.getElementById("navLinks")
+           function showMenu(){
+               navLinks.style.left = "0";
+           }
+           function hideMenu(){
+               navLinks.style.left = "-200px";
+           }
+        </script>
     </body>
 </html>

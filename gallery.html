@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-slace=1.0>
+        <title>Проект по OWEB</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+       <section class="sub-header">
+           <nav>
+               <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                   <ul>
+                       <li><a href="main.html">Home</a></li>
+                       <li><a href="about.html">About me</a></li>
+                       <li><a href="gallery.html">Gallery</a></li>
+                       <li><a href="insta.html">Mini Instagram</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="survey.html">Survey</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                   </ul>
+               </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+           <h1>My Gallery - Some of my favorite pictures</h1>  
+        </section>
+
+        <section class="galeri">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="sliki/galerija1.jpeg" style="width: 100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="sliki/galerija2.jpeg" style="width: 100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="sliki/galerija3.jpeg" style="width: 100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="sliki/galerija4.jpeg" style="width: 100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="sliki/galerija5.jpeg" style="width: 100%">
+                    <div class="text">Caption Text</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlides(1)"></span>
+                <span class="dot" onclick="currentSlides(2)"></span>
+                <span class="dot" onclick="currentSlides(3)"></span>
+                <span class="dot" onclick="currentSlides(4)"></span>
+                <span class="dot" onclick="currentSlides(5)"></span>
+            </div>
+        </section>
+
+        <section class="comment">
+            <div class="comment-box">
+                <h3><a href="#"><i class="fa fa-thumbs-up"></i></a> <a href="#"><i class="fa fa-thumbs-down"></i></a> <a href="#"><i class="fa fa-heart-o"></i></a> <a href="#"><i class="fa fa-smile-o"></i></a> <a href="#"><i class="fa fa-frown-o"></i></a> <a href="#"><i class="fa fa-meh-o"></i></a> <br>Leave a comment</h3>
+                <form class="comment-form">
+                    <textarea rows="2" placeholder="Your comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer">
+           <h4>About me</h4>
+           <p>Feel free to contact me on any of my social platforms given below</p>
+           <div class="icons">
+               <a href="https://www.facebook.com/darko.nushev"><i class="fa fa-facebook"></i></a>
+               <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+               <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+               <a href="https://github.com/DarkoNushev"><i class="fa fa-github"></i></a>
+           </div>
+           <p>Created by Darko Nushev <i class="fa fa-heart-o"></i></p>
+        </section>
+
+        <script src="script-gallery.js"></script>
+        <!-- Malku JS za menito vo mobilna forma -->
+        <script>
+           var navLinks = document.getElementById("navLinks")
+           function showMenu(){
+               navLinks.style.left = "0";
+           }
+           function hideMenu(){
+               navLinks.style.left = "-200px";
+           }
+        </script>
+    </body>
+</html>
